@@ -1,3 +1,9 @@
 from django.views.generic import TemplateView
 
-# Create your views here.
+
+class HomePageView(TemplateView):
+    template_name = 'pages/index.html'
+
+
+class AboutPagesView(TemplateView):
+    template_name = 'pages/about.html'
